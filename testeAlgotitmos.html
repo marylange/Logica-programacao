@@ -1,0 +1,21 @@
+<script>
+	var valorA = prompt("Digite o valor de A: ");
+	var valorB = prompt("Digite o valor de B: ");
+	var valorC = prompt("Digite o valor de C: ");
+	var coeficiente1;
+	var coeficiente2;
+
+	var delta = (valorB * valorB) - 4 * valorA * valorC;
+
+	console.log ("Valor de delta é " + delta);
+
+	if(delta < 0) {
+		console.log("Para Delta negativo, não existem raízes reais");
+	} else {
+		coeficiente1 = (- valorB + Math.sqrt(delta)) / (2* valorA);
+		coeficiente2 = (- valorB - Math.sqrt(delta)) / (2* valorA);
+	}
+
+	console.log("Coeficiente I é: " + coeficiente1); 
+	console.log("Coeficiente II é: " + coeficiente2);
+</script>
